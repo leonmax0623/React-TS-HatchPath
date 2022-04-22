@@ -1,0 +1,10 @@
+.carousel {
+  :global(.slick-prev) {
+    left: 3% !important;
+    z-index: 1;
+  }
+  :global(.slick-next) {
+    right: 3% !important;
+    z-index: 1;
+  }
+}

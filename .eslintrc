@@ -1,0 +1,102 @@
+{
+  "plugins": ["@typescript-eslint", "tailwindcss"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": ["error", "never"],
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "warn",
+    "tailwindcss/no-custom-classname": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "import/default": "off",
+    "import/namespace": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin"
+          },
+          {
+            "pattern": "next",
+            "group": "builtin"
+          },
+          {
+            "pattern": "next/**",
+            "group": "builtin"
+          },
+          {
+            "pattern": "react-redux",
+            "group": "builtin"
+          },
+          {
+            "pattern": "components/common/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "util/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "slices/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "types/**",
+            "group": "type",
+            "position": "after"
+          }
+        ],
+        "groups": [
+          "builtin",
+          "external",
+          "type",
+          "internal",
+          ["sibling", "parent"],
+          "index"
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": [
+          "react",
+          "react-redux",
+          "next",
+          "next/**"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "."]
+      }
+    },
+    "tailwindcss": {
+      "callees": ["cn"]
+    }
+  }
+}

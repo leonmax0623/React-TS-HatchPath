@@ -1,0 +1,131 @@
+export const APP_NAME = 'HatchPath'
+export const SUPPORT_EMAIL = 'support@hatchpath.io'
+export const DEFAULT_PAGE_DESCRIPTION =
+  'Connecting health coaches to the people who need support.'
+
+export const GENERIC_ERROR =
+  'Uh oh, something went wrong. Please try again later.'
+
+export const TAGS = {
+  coach: [
+    'Career coaching',
+    'Health coaching',
+    'Life coaching',
+    'Mindset coaching',
+    'Financial coaching',
+    'Relationship coaching',
+    'Weight loss coaching',
+    'Nutrition coaching',
+    'Public speaking coaching ',
+    'Productivity coaching ',
+    'Confidence coaching',
+    'Stress coaching',
+    'Intimacy coaching',
+    'Communication coaching.',
+    'Resilience coaching',
+    'Social skills coaching',
+    'Conflict management coaching',
+    'Self-esteem coaching',
+    'Parenting coaching',
+    'ADHD coaching',
+    'Coaching for single parents',
+    'Coaching for couples',
+    'Family coaching',
+    'Birth coaching',
+    'Hormone Coaching',
+    'Infertility coaching',
+    'Acne Coaching',
+    'Grief coaching',
+    'Coaching for divorced couples',
+    'Retirement coaching',
+    'Mid-life coaching',
+    'Life direction coaching',
+    'Money mindset coaching',
+    'Sleep coaching',
+    'Wellness coaching',
+    'Fitness coaching',
+    'Language coaching',
+    'Personal brand coach',
+    'Spiritual coaching ',
+    'Healing coaching',
+    'Religious coaching',
+    'Personal development coaching',
+    'Happiness coaching',
+    'EFT coaching',
+    'Self-discovery coaching',
+    'Purpose coaching',
+    'Friendship coaching',
+    'Performance coaching',
+    'Energy coaching',
+    'Goal-setting coaching',
+    'Focus coaching',
+  ],
+  health: [
+    'Dementia',
+    'Alzheimer’s ',
+    'Chronic Obstructive Pulmonary Disease (COPD)',
+    'Depression',
+    'Diabetes',
+    'Arthritis',
+    'High Cholesterol',
+    'Chronic Lyme Disease',
+    'Lyme Disease',
+    'Anorexia',
+    'Obesity',
+    'Over Weight',
+    'Asthma ',
+    'Hormones',
+    'Women’s Health ',
+    'Men’s Health',
+    'Children’s Health',
+    'Adolescent Health',
+    'Concussion',
+    'Chronic Pain',
+    'Fatigue',
+    'Stress',
+    'Sadness',
+    'Aches',
+    'Headaches',
+    'Cognitive Issues',
+    'Irritability',
+    'Sleep',
+    'Muscle Pain',
+    'Joint Pain',
+    'Smoking',
+    'Weight Loss',
+    'Nutrition ',
+    'Activity',
+    'Time Management',
+    'Detox',
+    'Cooking',
+  ],
+  diet: [
+    'Keto',
+    'Vegan',
+    'Gluten Free',
+    'Paleo',
+    'Low Carb',
+    'Carnivore',
+    'Vegetarian',
+    'Raw Food',
+    'No Sugar',
+  ],
+  other: ['Accountability', 'Encouragement', 'Unconditional Support'],
+}
+
+export const ALLOWED_COUNTRY_CODES = ['US', 'CA']
+
+export const TAGS_LIST = Object.values(TAGS)
+  .flat()
+  .map((tag) => tag.toLocaleLowerCase().trim())
+  .sort()
+
+export const CITIES = [
+  'New York City, New York',
+  'Los Angeles, California',
+  'Atlanta, Georgia',
+  'Seattle, Washington',
+  'San francisco, California',
+]
+  .map((val) => val.trim())
+  .sort()
